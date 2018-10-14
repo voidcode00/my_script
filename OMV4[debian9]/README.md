@@ -4,6 +4,7 @@ dockerhub替换成了国内加速器,daocloud加速网址可自行获得.
 安装了一个webui(需要提前装好docker)
 
 #以下是安装方法和过程
+========
 
 就是一个openmediavault4(简称OMV是debian9_nas)整合KVM(虚拟机)的方案
 文字很多但是需要动手的内容并不多
