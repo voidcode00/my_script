@@ -1,0 +1,23 @@
+# Line commented out by installer because it failed to verify:
+#deb http://security.debian.org/debian-security stretch/updates main contrib
+# Line commented out by installer because it failed to verify:
+#deb-src http://security.debian.org/debian-security stretch/updates main contrib
+
+# stretch-updates, previously known as 'volatile'
+# A network mirror was not selected during install.  The following entries
+# are provided as examples, but you should amend them as appropriate
+# for your mirror of choice.
+#
+# deb http://deb.debian.org/debian/ stretch-updates main contrib
+# deb-src http://deb.debian.org/debian/ stretch-updates main contrib
+
+deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free
+# deb-src http://mirrors.ustc.edu.cn/debian stable main contrib non-free
+deb http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free
+# deb-src http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free
+
+# deb http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
+# deb-src http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
+
+deb http://mirrors.ustc.edu.cn/debian-security/ stable/updates main non-free contrib
+# deb-src http://mirrors.ustc.edu.cn/debian-security/ stable/updates main non-free contrib
