@@ -68,3 +68,5 @@ chown -R webvirtmgr:webvirtmgr /data/vm
 docker run --restart=always -d -p 8080:8080 -p 6080:6080 --name webvirtmgr -v /data/vm:/data/vm unws/webvirtmgr
 sleep 10
 docker exec -it webvirtmgr /usr/bin/python /webvirtmgr/manage.py changepassword admin
+
+reboot now
