@@ -35,8 +35,7 @@ sleep 1
 service libvirtd stop
 sleep 1
 service libvirtd start
-echo "
-#!/bin/sh -e
+echo "#!/bin/sh -e
 #
 # rc.local
 #
