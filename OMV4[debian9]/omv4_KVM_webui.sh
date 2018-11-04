@@ -8,7 +8,7 @@ curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://440d3ed3
 systemctl daemon-reload
 systemctl restart docker
 
-apt install qemu-kvm qemu uml-utilities libvirt-dev virtinst libvirt-daemon-system -y
+apt install qemu-kvm qemu uml-utilities libvirt-dev virtinst libvirt-daemon-system bridge-utils -y
 apt install dnsmasq ebtables -y
 
 echo "
