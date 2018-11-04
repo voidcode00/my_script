@@ -35,6 +35,30 @@ sleep 1
 service libvirtd stop
 sleep 1
 service libvirtd start
+echo "
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will \"exit 0\" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+sleep 30
+
+echo 0 > /proc/sys/net/bridge/bridge-nf-call-iptables
+echo 0 > /proc/sys/net/bridge/bridge-nf-call-ip6tables
+echo 0 > /proc/sys/net/bridge/bridge-nf-call-arptables
+
+exit 0
+" > /etc/rc.local
+chmod +x /etc/rc.local
+
 docker pull unws/webvirtmgr
 groupadd -g 1010 webvirtmgr
 mkdir /data
