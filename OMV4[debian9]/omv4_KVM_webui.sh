@@ -6,6 +6,7 @@ apt update
 apt install curl -y
 
 curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://440d3ed3.m.daocloud.io
+#如果你需要自己独立的加速网址,则需要注册daocloud获得.
 systemctl daemon-reload
 systemctl restart docker
 
