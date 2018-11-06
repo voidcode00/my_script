@@ -1,7 +1,8 @@
 #!/bin/bash
 
 apt update
-apt upgrade -y
+#apt upgrade -y
+#如果你想更新全部的安装包则打开他,但是更新到最新内核并不一定是好事.
 apt install curl -y
 
 curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://440d3ed3.m.daocloud.io
